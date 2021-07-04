@@ -73,18 +73,28 @@ int clickSize = 8;
         if (checkBoxBold.isSelected()) {
 //            textArea.setStyle("-fx-font-weight: bold");
             boltStyle = "bold";
+        } else {
+            boltStyle = "normal";
         }
         if (checkBoxItalic.isSelected()) {
 //            textArea.setStyle("-fx-font-style: italic");
             italicStyle = "italic";
-        }
-
-
-        if (!checkBoxBold.isSelected() && !checkBoxItalic.isSelected()) {
-            textArea.setStyle("-fx-font-weight: normal");
-            boltStyle = "normal";
+        }else {
             italicStyle = "normal";
         }
+
+//
+//        if (!checkBoxBold.isSelected()) {
+////            textArea.setStyle("-fx-font-weight: normal");
+//            boltStyle = "normal";
+////            italicStyle = "normal";
+//        }
+//
+//        if (!checkBoxItalic.isSelected()) {
+////            textArea.setStyle("-fx-font-weight: normal");
+////            boltStyle = "normal";
+//            italicStyle = "normal";
+//        }
 //        if (checkBoxBold.isSelected() && checkBoxItalic.isSelected()) {
 //            textArea.setStyle("-fx-font-weight: bold;" +
 //                    "-fx-font-style: italic");

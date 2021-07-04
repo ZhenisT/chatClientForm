@@ -12,8 +12,7 @@
 <?import javafx.scene.layout.AnchorPane?>
 <?import javafx.scene.text.Font?>
 
-
-<AnchorPane maxHeight="Infinity" maxWidth="Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="600.0" prefWidth="500.0" xmlns="http://javafx.com/javafx/8.0.172-ea" xmlns:fx="http://javafx.com/fxml/1" fx:controller="sample.Controller">
+<AnchorPane maxHeight="Infinity" maxWidth="Infinity" minHeight="600" minWidth="500" prefHeight="600.0" prefWidth="500.0" xmlns="http://javafx.com/javafx/8.0.172-ea" xmlns:fx="http://javafx.com/fxml/1" fx:controller="sample.Controller">
    <children>
       <MenuBar layoutX="35.0" layoutY="95.0" AnchorPane.leftAnchor="0.0" AnchorPane.topAnchor="0.0">
         <menus>
@@ -34,20 +33,20 @@
           </Menu>
         </menus>
       </MenuBar>
-      <TextArea fx:id="textArea" layoutX="6.0" layoutY="21.0" minHeight="-Infinity" minWidth="-Infinity" prefHeight="485.0" prefWidth="485.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" />
-      <TextField fx:id="textField" layoutX="14.0" layoutY="549.0" maxWidth="-Infinity" minWidth="-Infinity" onAction="#onActionTextField" prefHeight="51.0" prefWidth="435.0" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="65.0" />
-      <Button fx:id="Enter" layoutX="376.0" layoutY="549.0" mnemonicParsing="false" onAction="#enterTextField" prefHeight="51.0" prefWidth="65.0" text="Enter" AnchorPane.rightAnchor="0.0">
+      <TextArea fx:id="textArea" layoutX="6.0" layoutY="21.0" minHeight="-Infinity" minWidth="-Infinity" prefHeight="485.0" prefWidth="485.0" AnchorPane.bottomAnchor="94.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="21.0" />
+      <TextField fx:id="textField" layoutX="14.0" layoutY="549.0" maxWidth="-Infinity" minWidth="-Infinity" onAction="#onActionTextField" prefHeight="51.0" prefWidth="435.0" AnchorPane.bottomAnchor="5.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="65.0" />
+      <Button fx:id="Enter" layoutX="376.0" layoutY="549.0" mnemonicParsing="false" onAction="#enterTextField" prefHeight="51.0" prefWidth="65.0" text="Enter" AnchorPane.bottomAnchor="5.0" AnchorPane.rightAnchor="0.0">
          <font>
             <Font name="System Bold" size="15.0" />
          </font></Button>
-      <Slider fx:id="slider" onMouseReleased="#onMouseMovedReleased" layoutX="218.0" layoutY="508.0" max="24.0" min="8.0" showTickLabels="true" showTickMarks="true" />
-      <ColorPicker fx:id="colorPicker" onAction="#onActionColorPicker" layoutX="361.0" layoutY="513.0" />
-      <CheckBox fx:id="checkBoxItalic" onAction="#onActioncheckBox" layoutX="132.0" layoutY="510.0" mnemonicParsing="false" prefHeight="33.0" prefWidth="78.0" text="Italic" AnchorPane.leftAnchor="120.0">
+      <Slider fx:id="slider" layoutX="218.0" layoutY="508.0" max="24.0" min="8.0" onMouseReleased="#onMouseMovedReleased" showTickLabels="true" showTickMarks="true" AnchorPane.bottomAnchor="54.0" AnchorPane.leftAnchor="218.0" />
+      <ColorPicker fx:id="colorPicker" layoutX="361.0" layoutY="513.0" onAction="#onActionColorPicker" AnchorPane.bottomAnchor="57.0" AnchorPane.leftAnchor="361.0" />
+      <CheckBox fx:id="checkBoxItalic" layoutX="132.0" layoutY="510.0" mnemonicParsing="false" onAction="#onActioncheckBox" prefHeight="33.0" prefWidth="78.0" text="Italic" AnchorPane.bottomAnchor="57.0" AnchorPane.leftAnchor="120.0">
          <font>
             <Font name="System Italic" size="16.0" />
          </font>
       </CheckBox>
-      <CheckBox fx:id="checkBoxBold" onAction="#onActioncheckBox" contentDisplay="CENTER" layoutX="14.0" layoutY="518.0" mnemonicParsing="false" prefHeight="33.0" prefWidth="78.0" text="Bolt" textAlignment="CENTER" AnchorPane.bottomAnchor="57.0" AnchorPane.leftAnchor="10.0">
+      <CheckBox fx:id="checkBoxBold" contentDisplay="CENTER" layoutX="14.0" layoutY="518.0" mnemonicParsing="false" onAction="#onActioncheckBox" prefHeight="33.0" prefWidth="78.0" text="Bolt" textAlignment="CENTER" AnchorPane.bottomAnchor="57.0" AnchorPane.leftAnchor="10.0">
          <font>
             <Font name="System Bold" size="16.0" />
          </font>
